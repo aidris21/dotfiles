@@ -1,0 +1,4 @@
+# tpm installs plugins here automatically — only tpm itself is tracked
+*
+!tpm
+!.gitignore
