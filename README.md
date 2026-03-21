@@ -77,14 +77,9 @@ Plugin manager: [lazy.nvim](https://github.com/folke/lazy.nvim)
 # Clone
 git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
 
-# Symlink configs to home directory
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/.wezterm.lua ~/.wezterm.lua
-ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
-ln -sf ~/dotfiles/.config/zed ~/.config/zed
-# ... etc.
+# Symlink everything with GNU Stow
+cd ~/dotfiles
+stow .
 
 # Tmux plugins
 # Open tmux, then press: prefix + I
