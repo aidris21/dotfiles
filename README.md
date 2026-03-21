@@ -77,6 +77,9 @@ Plugin manager: [lazy.nvim](https://github.com/folke/lazy.nvim)
 # Clone
 git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
 
+# Install Homebrew packages
+brew bundle --file=~/dotfiles/Brewfile
+
 # Symlink everything with GNU Stow
 cd ~/dotfiles
 stow .
